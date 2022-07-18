@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(46, 38, 38);
     color: rgb(206, 206, 206);
     grid-column: 1/-1;
     grid-row: 1/2;  
@@ -20,7 +20,7 @@ header{
     top: 0px;
     left: 0px;
     width: 100%;
-    box-shadow: 0px 0px 33px -3px rgba(0,0,0,0.76);
+    box-shadow: 0px 0px 33px -3px rgba(49, 38, 33, 0.76);
 }
 main{
     grid-column: 2/3;
@@ -28,18 +28,18 @@ main{
 }
 .espacio{
     margin-top: 5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     height: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 table{
-    background-color: rgb(255, 234, 195);
+    background-color: rgb(223, 215, 215);
     width: 100%;
     margin: auto;
     border-collapse: collapse;
 }
 thead{
-    background-color: rgb(63, 57, 46);
+    background-color: rgb(75, 62, 62);
     color: rgb(206, 206, 206);
 }
 th{
@@ -48,15 +48,46 @@ th{
 td{
     box-shadow: inset 0px 0px 33px -3px rgba(0,0,0,0.26);
 }
+td:hover{
+    background-color: rgb(255, 241, 241);
+}
 table img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 footer{
-    height: 5px;
-    background-color: rgb(37, 37, 37);
+    margin-top: 25rem;
+    height: 8rem;
+    background-color: rgb(44, 40, 40);
     grid-column: 1/-1;
     grid-row: 3/4;
-    box-shadow: 0px 0px 33px -3px rgba(0,0,0,0.76);
+    box-shadow: 0px 0px 33px -3px rgba(0,0,0,0.96);
+    color: rgb(206, 206, 206);
+    text-align: center;
+    bottom: 0px;
+}
+@media(min-width: 1200px){
+    .movil{
+        display: none;
+    }
+}
+@media(min-width: 700px) and (max-width: 1200px){
+    .pc{
+        display: none;
+    }
+    table{
+        width: 50%;
+    }
+    .espacio{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 700px){
+    .pc{
+        display: none;
+    }
+    .espacio{
+        font-size: 1.5rem;
+    }
 }
